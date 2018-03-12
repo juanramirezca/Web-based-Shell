@@ -1,0 +1,60 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+img{
+  /*margin: auto;
+  //margin-left: 40%;
+  //margin-top:3px;*/
+}
+
+#bash-name{
+  display: inline;
+}
+
+#add{
+  display: inline;
+}
+
+.input {
+  display: -webkit-inline-box;
+}
+
+input{
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  margin-left: 17px;
+  color: white;
+  background-color: black;
+  border: none;
+  width: 900px;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.middlepane {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: black;
+    color: white;
+    border-collapse: collapse;
+    padding-left: 15px;
+}
+
+
+.toppane {
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(#d3d3d3, #c0c0c0);
+  border-collapse: collapse;
+  text-align: center;
+}
