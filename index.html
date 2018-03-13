@@ -4,6 +4,8 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="jquery.custom-caret-1.1.js"></script>
   </head>
   <body>
     <div id="app" class="container">
@@ -16,7 +18,9 @@
       </div>
       <div class="middlepane">
         <p id="date">Last login: </p>
-        <div class="input">Web-based-shell:~ {{user}}$ <input id="box" type="text"></div>
+        <div class="input"><p>Web-based-shell:~ {{user}}$</p>
+          <div id="demo" contenteditable="true" spellcheck="false"></div>
+        </div>
       </div>
 
 
@@ -39,6 +43,11 @@
     </div>
 
     <script src = "app.js"></script>
+    <script>
+
+        $("#demo").customCaret();
+
+    </script>
 
   </body>
 
