@@ -6,28 +6,39 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   </head>
   <body>
-    <div id = "app" class="container">
+    <div id="app" class="container">
       <div class="toppane">
         <img src="img/home.png">
         <p id="bash-name" style="font-family:sans-serif;font-size:15px;">{{user}} –– -bash –– 120x36</p>
+        <span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+
         <!--img id="add" src="img/add.png"-->
       </div>
       <div class="middlepane">
         <p id="date">Last login: </p>
         <div class="input">Web-based-shell:~ {{user}}$ <input id="box" type="text"></div>
-
       </div>
 
+
     </div>
-    <script language = "javascript">
-      new Vue({
-        el: '#app',
-        data: {
-          user: 'sample-user'
-        }
-      });
-      document.getElementById("date").innerHTML += new Date();
-    </script>
+
+    <div id="root" class="tab-menu">
+        <tabs>
+            <tab name="Tab Ex. 1" :selected="true" class="tabs-style">
+                <h1>Here is the content for the Tab Ex. 1 tab.</h1>
+            </tab>
+
+            <tab name="Tab Ex. 2" class="tabs-style">
+                <h1>Here is the content for the Tab Ex. 2 tab.</h1>
+            </tab>
+
+            <tab name="Tab Ex. 3" class="tabs-style">
+                <h1>Here is the content for the Tab Ex. 3 tab.</h1>
+            </tab>
+        </tabs>
+    </div>
+
+    <script src = "app.js"></script>
 
   </body>
 
