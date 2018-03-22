@@ -13,12 +13,6 @@ body, html {
   background-color: #f4f3d7;
 }
 
-img{
-  /*margin: auto;
-  //margin-left: 40%;
-  //margin-top:3px;*/
-}
-
 #bash-name{
   display: inline;
 }
@@ -31,17 +25,6 @@ img{
   display: -webkit-inline-box;
 }
 
-input p{
-  font-family: "Courier New", Courier, monospace;
-  font-size: 16px;
-  margin-left: 17px;
-  color: white;
-  background-color: black;
-  border: none;
-  width: 720px;
-  outline: none;
-  margin-top: 2px;
-}
 
 .container {
   padding-top: 20px;
@@ -71,10 +54,9 @@ input p{
   box-shadow: 10px 10px 10px grey;
 }
 
-.tabs-style{
-  float: left;
-  font-size: 20px;
-  display: inline;
+
+#par {
+  display: block;
 }
 
 #close {
@@ -111,7 +93,7 @@ blink-animation {  to {
 }
 }
 
-#demo {
+#textfieldinput {
   margin-top: 16px;
   outline: none;
   margin-left: 20px;
