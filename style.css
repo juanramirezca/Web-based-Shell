@@ -1,15 +1,16 @@
+
+:root {  --blue: #268bd2;
+ --background: #002b36;
+ --text: white;
+}
+
 body, html {
   width: 100%;
   height: 100%;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
-}
-
-img{
-  /*margin: auto;
-  //margin-left: 40%;
-  //margin-top:3px;*/
+  background-color: #f4f3d7;
 }
 
 #bash-name{
@@ -24,37 +25,79 @@ img{
   display: -webkit-inline-box;
 }
 
-input{
-  font-family: "Courier New", Courier, monospace;
-  font-size: 16px;
-  margin-left: 17px;
-  color: white;
-  background-color: black;
-  border: none;
-  width: 900px;
-  outline: none;
-}
 
 .container {
-  width: 100%;
-  height: 100%;
+  padding-top: 20px;
+  width: 86%;
+  height: 88%;
+  margin: 0 auto;
+
 }
 
 .middlepane {
     width: 100%;
-    height: 100%;
+    height: 95%;
     float: left;
     background-color: black;
     color: white;
     border-collapse: collapse;
     padding-left: 15px;
+    box-shadow: 10px 10px 10px grey;
 }
 
 
 .toppane {
-  width: 100%;
-  height: 30px;
+  width: 101.3%;
+  height: 5%;
   background: linear-gradient(#d3d3d3, #c0c0c0);
-  border-collapse: collapse;
   text-align: center;
+  box-shadow: 10px 10px 10px grey;
+}
+
+
+#par {
+  display: block;
+}
+
+#close {
+    float:right;
+    display:inline-block;
+    padding:2px 7px;
+    margin-right: 3px;
+    margin-top: 3px;
+    background:red;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:white;
+}
+
+#close:hover {
+    float:right;
+    display:inline-block;
+    padding:2px 7px;
+    margin-right: 3px;
+    margin-top: 3px;
+    background:white;
+    color:red;
+    font-weight: bold;
+
+}
+#caret {
+  border-right: 0.5em solid var(--text);
+  margin-right: -0.5em;
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+ @keyframes
+blink-animation {  to {
+ visibility: hidden;
+}
+}
+
+#textfieldinput {
+  margin-top: 16px;
+  outline: none;
+  margin-left: 20px;
+  color: transparent;
+  text-shadow: 0 0 var(--text);
+  width: 700px;
 }
